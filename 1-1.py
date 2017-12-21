@@ -12,5 +12,17 @@ name, age, price, date = data
 print (name)
 print (age)
 
+#discussion
 
+palabra = "hello"
+a,b,c,d,e=palabra
+print (a)
+print (b)
+print (c)
+print (d)
 
+#-------
+data = ['acme', 50, 90.1, (2012,12,21)]
+_, shares,price,_ =data
+print (shares)
+print(_)
