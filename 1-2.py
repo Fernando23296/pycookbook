@@ -32,4 +32,17 @@ print(uno)
 print(dos)
 print(tres)
 
+#if you want to ignore some values from the list, you can use '_' or 'ign'
+record = ('ACME', 50, 123.45,(12,18,2012))
+name,*_,(*_,year)=record
+#in this case I use the '_' character
+print(name)
+print(year)
 
+#an example with a function usign the star unpacking
+items = [1,10,7,4,5,9]
+def sum(items):
+    head,*tail=items
+    return head+sum(tail) if tail else head
+
+print(sum(items))
